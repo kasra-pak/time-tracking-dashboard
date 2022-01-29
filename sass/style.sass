@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap')
+
+//---=== Variables ===---//
+$blue: hsl(246, 80%, 60%)
+$light-red-work: hsl(15, 100%, 70%)
+$soft-blue-play: hsl(195, 74%, 62%)
+$light-red-study: hsl(348, 100%, 68%)
+$lime-green-exercise: hsl(145, 58%, 55%)
+$violet-social: hsl(264, 64%, 52%)
+$soft-orange-self-care: hsl(43, 84%, 65%)
+$very-dark-blue: hsl(226, 43%, 10%)
+$dark-blue: hsl(235, 46%, 20%)
+$desaturated-blue: hsl(235, 45%, 61%)
+$pale-blue: hsl(236, 100%, 87%)
+
+//---=== Styles ===---//
+*,
+::before,
+::after
+  box-sizing: border-box
+
+html
+  font-size: 18px
+
+body
+  font-family: 'Rubik', sans-serif
+  background-color: $very-dark-blue
+  color: white
+  display: grid
+  justify-items: center
+  align-content: center
+  min-height: 100vh
+  margin: 0
+
+.dashboard
+  width: 85%
+  display: grid
+  gap: 1em
+
+.user-box
+  background-color: $dark-blue
+  border-radius: 10px
+  display: grid
+  grid-template-rows: 2fr 1fr
+
+.user-info
+  background-color: $blue
+  border-radius: 10px
+  display: grid
+  grid-template-columns: auto 1fr
+  align-items: center
+  gap: 0.75em
+  padding: 1.75em 1.25em
+
+  &__avatar
+    display: block
+    max-width: 65px
+    border: 2px solid white
+    border-radius: 50%
+
+  &__title
+    margin: 0
+    line-height: 1.75em
+    font:
+      size: 0.8rem
+      weight: 300
+    color: $pale-blue
+
+.user-name
+  display: block
+  font-size: 1.2rem
+  color: white
+
+.time-frames
+  color: $desaturated-blue
+  padding: 0
+  font:
+    size: 0.9rem
+    weight: 400
+  list-style-type: none
+  display: grid
+  grid-auto-flow: column
+  justify-content: space-around
+  align-items: center
+
+.statistic-box
+  border-radius: 10px
+  display: grid
+  grid-template-rows: 1fr 3.25fr
+
+  &__header
+    overflow: hidden
+    position: relative
+
+    img
+      display: block
+      position: absolute
+      right: 15px
+      top: 80%
+      transform: translateY(-50%)
+
+  &__content
+    background-color: $dark-blue
+    border-radius: 10px
+    padding: 1.5em 1.5em
+    display: grid
+    gap: 0.5em 0
+    grid-template-columns: 1fr auto
+    align-items: center
+
+.statistic-box__title
+  margin: 0
+  font:
+    size: 1rem
+    weight: 500
+
+.statistic-box__ellipsis
+  justify-self: end
+
+  img
+    display: block
+
+.current-statistic
+  font:
+    size: 1.8rem
+    weight: 300
+
+.previous-statistic
+  font:
+    size: 0.8rem
+    weight: 300
+  color: $pale-blue
+
+.statistic-box:nth-child(2)
+  background-color: $light-red-work
+
+.statistic-box:nth-child(3)
+  background-color: $soft-blue-play
+
+.statistic-box:nth-child(4)
+  background-color: $light-red-study
+
+.statistic-box:nth-child(5)
+  background-color: $lime-green-exercise
+
+.statistic-box:nth-child(6)
+  background-color: $violet-social
+
+.statistic-box:nth-child(7)
+  background-color: $soft-orange-self-care

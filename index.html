@@ -4,65 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Time tracking dashboard</title>
 </head>
 <body>
+<div class="dashboard">
+  
+    <div class="user-box">
+      <div class="user-info">
+        <img class="user-info__avatar" src="images/image-jeremy.png" alt="avatar">
+        <h2 class="user-info__title">
+          Report for
+          <span class="user-name">Jeremy Robson</span>
+        </h2>
+      </div>
+      <ul class="time-frames">
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </div>
+  
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-work.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Work</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
 
-  Report for
-  Jeremy Robson
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-play.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Play</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-study.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Study</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-exercise.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Exercise</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-social.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Social</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <div class="statistic-box">
+      <div class="statistic-box__header">
+        <img src="images/icon-self-care.svg" alt="">
+      </div>
+      <div class="statistic-box__content">
+        <h3 class="statistic-box__title">Self Care</h3>
+        <div class="statistic-box__ellipsis">
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="current-statistic">32hrs</div>
+        <div class="previous-statistic">Last Week - 36hrs</div>
+      </div>
+    </div>
+    
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+</div>
 </body>
 </html>
