@@ -4,6 +4,7 @@
 $blue: hsl(246, 80%, 60%)
 $very-dark-blue: hsl(226, 43%, 10%)
 $dark-blue: hsl(235, 46%, 20%)
+$dark-blue-hover: hsl(235, 46%, 35%)
 $desaturated-blue: hsl(235, 45%, 61%)
 $pale-blue: hsl(236, 100%, 87%)
 $light-red-work: hsl(15, 100%, 70%)
@@ -83,6 +84,10 @@ body
   justify-content: space-around
   align-items: center
 
+  li:hover
+    color: white
+    cursor: pointer
+
 .statistic-box
   border-radius: 10px
   display: grid
@@ -107,6 +112,10 @@ body
     gap: 0.5em 0
     grid-template-columns: 1fr auto
     align-items: center
+    position: relative
+
+  &:hover &__content
+    background-color: $dark-blue-hover
 
 .statistic-box__title
   margin: 0
@@ -117,8 +126,14 @@ body
 .statistic-box__ellipsis
   justify-self: end
 
-  img
+  svg
     display: block
+
+  svg:hover
+    cursor: pointer
+
+    path
+      fill: #fff
 
 .current-statistic
   font:

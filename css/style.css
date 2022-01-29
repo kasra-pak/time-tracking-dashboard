@@ -90,6 +90,11 @@ body {
           align-items: center;
 }
 
+.time-frames li:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .statistic-box {
   border-radius: 10px;
   display: -ms-grid;
@@ -124,6 +129,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.statistic-box:hover .statistic-box__content {
+  background-color: #303782;
 }
 
 .statistic-box__title {
@@ -137,8 +147,16 @@ body {
       justify-self: end;
 }
 
-.statistic-box__ellipsis img {
+.statistic-box__ellipsis svg {
   display: block;
+}
+
+.statistic-box__ellipsis svg:hover {
+  cursor: pointer;
+}
+
+.statistic-box__ellipsis svg:hover path {
+  fill: #fff;
 }
 
 .current-statistic {
