@@ -2,16 +2,16 @@
 
 //---=== Variables ===---//
 $blue: hsl(246, 80%, 60%)
+$very-dark-blue: hsl(226, 43%, 10%)
+$dark-blue: hsl(235, 46%, 20%)
+$desaturated-blue: hsl(235, 45%, 61%)
+$pale-blue: hsl(236, 100%, 87%)
 $light-red-work: hsl(15, 100%, 70%)
 $soft-blue-play: hsl(195, 74%, 62%)
 $light-red-study: hsl(348, 100%, 68%)
 $lime-green-exercise: hsl(145, 58%, 55%)
 $violet-social: hsl(264, 64%, 52%)
 $soft-orange-self-care: hsl(43, 84%, 65%)
-$very-dark-blue: hsl(226, 43%, 10%)
-$dark-blue: hsl(235, 46%, 20%)
-$desaturated-blue: hsl(235, 45%, 61%)
-$pale-blue: hsl(236, 100%, 87%)
 
 //---=== Styles ===---//
 *,
@@ -54,7 +54,7 @@ body
 
   &__avatar
     display: block
-    max-width: 65px
+    width: 65px
     border: 2px solid white
     border-radius: 50%
 
@@ -148,3 +148,54 @@ body
 
 .statistic-box:nth-child(7)
   background-color: $soft-orange-self-care
+
+@media (min-width: 1200px)
+  .dashboard
+    width: 75%
+    gap: 1.7em
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+
+  .user-box
+    grid-row: 1 / -1
+
+  .user-info
+    grid-template-columns: 1fr
+    grid-template-rows: auto 1fr
+    align-items: start
+    padding: 1.75em
+    gap: 1.5em
+
+    &__avatar
+      width: 80px
+
+    &__title
+      font-size: 0.85rem
+      line-height: 1.5em
+
+  .user-name
+    font-size: 2rem
+    line-height: 1.25em
+
+  .time-frames
+    grid-auto-flow: row
+    justify-content: start
+    font-size: 1rem
+    gap: 1em
+    padding: 0.5em 1.75em
+
+  .statistic-box
+    border-radius: 10px
+    display: grid
+    grid-template-rows: 1fr 4.25fr
+
+    &__content
+      grid-template-rows: auto 1fr auto
+
+  .current-statistic
+    font-size: 3rem
+    align-self: end
+    padding-top: 0.3em
+
+  .previous-statistic
+    grid-column: 1 / -1
