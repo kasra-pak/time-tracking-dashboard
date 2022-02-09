@@ -95,6 +95,10 @@ body {
   cursor: pointer;
 }
 
+.time-frames .active {
+  color: white;
+}
+
 .statistic-box {
   border-radius: 10px;
   display: -ms-grid;
